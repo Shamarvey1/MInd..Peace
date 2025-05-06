@@ -38,77 +38,71 @@
 }
 
 
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-}
-
-
 .navbar {
-  display: flex;                  
-  justify-content: space-between;  
-  align-items: center;           
-  background-color:blue;     
-  padding: 10px 30px;
-  color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.navbar .brands {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-
+  background-color: #d2f1eb;
+  padding: 16px 32px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
 }
+
+.brand {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f4f4f;
+}
+
+
 .links {
-  display: flex;           
-  gap: 30px;              
-  align-items: center;    
-}
-.Button{
   display: flex;
-  gap: 10px;
-  align-items: center;
+  gap: 24px;
 }
-.Button button {
-  background-color: #ffffff;    
-  color: #030b14;               
-  border: 1px solid #0d0d0e;    
-  padding: 8px 16px;            
-  margin-left: 10px;           
-  font-size: 10px;              
-  font-weight: 400;              
-  border-radius: 5px;          
-  cursor: pointer;             
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.Button button:hover {
-  background-color: #ffcc00;     
-  color: black;                  
-}
-
 
 .nav-link {
-  color: white;           
-  text-decoration: none;   
-  font-size: 18px;       
-  font-weight: 500;
-  transition: color 0.3s ease;
+  text-decoration: none;
+  color: #2f4f4f;
+  font-size: 16px;
+  transition: color 0.2s;
 }
 
 .nav-link:hover {
-  color: #ffcc00;          
+  color: #1c7f7f;
 }
 
+
+.Button {
+  display: flex;
+  gap: 12px;
+}
+
+.Button button {
+  padding: 6px 14px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.Button button:first-child {
+  background-color: transparent;
+  color: #1f4f4f;
+}
+
+.Button button:first-child:hover {
+  color: #116666;
+}
+
+.Button button:last-child {
+  background-color: #006d6d;
+  color: white;
+}
+
+.Button button:last-child:hover {
+  background-color: #005555;
+}
 
 
 

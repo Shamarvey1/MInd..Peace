@@ -2,6 +2,9 @@ import About from './components/About';
 import Home from './components/Home';
 import Product from './components/Product';
 import Blog from './components/Blog';
+import HeroSection from './components/HeroSection.js';
+
+
 
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
@@ -15,7 +18,7 @@ function App() {
           Mental Health Tracker
           </div>
           <div className='links'>
-          <Link to="/home" className="nav-link">Home</Link>
+          <a href="/home" className="nav-link">Home</a>
           <Link to="/about" className="nav-link">About</Link>
           <Link to="/products" className="nav-link">Products</Link>
           <Link to="/Blog" className="nav-link">Blog</Link>
@@ -25,6 +28,7 @@ function App() {
             <button>Sign Up</button>
           </div>
       </nav>
+      <HeroSection />
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
