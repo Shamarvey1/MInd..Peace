@@ -1,0 +1,106 @@
+/* ToolCard Styling (Adjusted for Consistency with Navbar) */
+.tool-card {
+  background-color: #f9fdfa;
+  border-radius: 12px;
+  padding: 16px 20px; /* Adjusted padding for consistency */
+  text-align: center;
+  width: 300px; /* Default width */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin: 10px; /* Added margin for spacing between cards */
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.tool-icon {
+  font-size: 28px; /* Default icon size */
+  margin-bottom: 12px;
+  color: #047857;
+}
+
+.tool-card h3 {
+  font-size: 16px; /* Default title font size */
+  margin: 8px 0 5px;
+  color: #222;
+}
+
+.tool-card p {
+  font-size: 14px;
+  color: #666;
+  min-height: 50px;
+  margin-bottom: 12px; /* Adjusted margin */
+}
+
+.view-button {
+  padding: 8px 16px; /* Default button padding */
+  background-color: #047857;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 14px; /* Default font size */
+}
+
+.view-button:hover {
+  background-color: #065f46;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For devices with a width less than 768px (tablets and smaller screens) */
+@media (max-width: 768px) {
+  .tool-card {
+    width: 200px; /* Reduced width for smaller screens */
+    padding: 14px 16px; /* Reduced padding */
+  }
+
+  .tool-icon {
+    font-size: 24px; /* Smaller icon size */
+  }
+
+  .tool-card h3 {
+    font-size: 14px; /* Smaller title font size */
+  }
+
+  .tool-card p {
+    font-size: 12px; /* Smaller paragraph font size */
+    margin-bottom: 10px; /* Reduced margin */
+  }
+
+  .view-button {
+    padding: 6px 12px; /* Smaller button padding */
+    font-size: 12px; /* Smaller button font size */
+  }
+}
+
+/* For devices with a width less than 480px (mobile screens) */
+@media (max-width: 480px) {
+  .tool-card {
+    width: 160px; /* Further reduced width for very small screens */
+    padding: 12px 14px; /* Smaller padding */
+  }
+
+  .tool-icon {
+    font-size: 20px; /* Smaller icon size */
+  }
+
+  .tool-card h3 {
+    font-size: 12px; /* Smaller title font size */
+  }
+
+  .tool-card p {
+    font-size: 12px; /* Further reduced paragraph font size */
+    margin-bottom: 8px; /* Reduced margin */
+  }
+
+  .view-button {
+    padding: 5px 10px; /* Even smaller button padding */
+    font-size: 12px; /* Adjusted font size */
+  }
+}
+
+/* No specific styles for large screens, defaults should work */
