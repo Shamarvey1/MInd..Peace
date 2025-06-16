@@ -1,13 +1,16 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+
 import About from './components/About';
 import Home from './components/Home';
 import Product from './components/Product';
 import Blog from './components/Blog';
 import HeroSection from './components/HeroSection';
 import Login from './components/Login';
-import ToolSection from './components/ToolSection'; 
-
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import ToolSection from './components/ToolSection';
+import Featuredsection from './components/Featuredsection'; 
+import TestimonialCard from './components/TestimonialCard';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -28,25 +31,28 @@ function App() {
       </nav>
 
       <Routes>
-        {/* Home Route with HeroSection, Home, and ToolSection */}
         <Route path="/" element={
           <>
             <HeroSection />
             <Home />
             <ToolSection />
+            <Featuredsection /> 
+            <TestimonialCard />
+            <Footer />
           </>
         } />
-        
-        {/* Home Route (can be an alias for "/" in this case) */}
+
         <Route path="/home" element={
           <>
             <HeroSection />
             <Home />
             <ToolSection />
+            <Featuredsection /> 
+            <TestimonialCard />
+            <Footer />
           </>
         } />
-        
-        
+
         <Route path="/login" element={<Login />} />
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Product />} />

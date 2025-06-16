@@ -1,0 +1,79 @@
+/* src/components/TestimonialCard.css */
+.testimonial-container {
+  background-color: #FFFCF6;
+  padding: 60px 20px;
+  text-align: left;
+}
+
+.testimonial-heading {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.testimonial-card {
+  display: flex;
+  align-items: center;
+  background-color: #E6FAF4;
+  border-radius: 12px;
+  padding: 20px 30px;
+  position: relative;
+  max-width: auto;
+  margin: 0 auto;
+}
+
+.testimonial-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.testimonial-content {
+  flex: 1;
+}
+
+.testimonial-quote {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.testimonial-quote strong {
+  font-weight: bold;
+  color: #000;
+}
+
+.testimonial-author {
+  font-size: 14px;
+  color: #555;
+}
+
+.testimonial-arrow {
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.testimonial-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 4px;
+  display: inline-block;
+}
+
+.dot.active {
+  background-color: #00816A;
+}

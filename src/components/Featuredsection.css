@@ -1,0 +1,74 @@
+/* src/components/FeatureSection.css */
+.feature-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 60px 40px;
+  background-color: #f9fdfa;
+  gap: 80px;
+}
+
+.feature-card {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 40px;
+  flex: 1 1 500px;
+  max-width: 700px;
+}
+
+.feature-card.column-reverse {
+  flex-direction: row-reverse;
+}
+
+.feature-image {
+  width: 260px;
+  height: auto;
+}
+
+.feature-text {
+  flex: 1;
+}
+
+.feature-text h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.feature-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.feature-text p strong {
+  font-weight: 700;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .feature-container {
+    padding: 40px 20px;
+  }
+
+  .feature-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .feature-card.column-reverse {
+    flex-direction: column;
+  }
+
+  .feature-image {
+    width: 180px;
+  }
+
+  .feature-text {
+    max-width: 100%;
+  }
+}

@@ -1,9 +1,8 @@
 import React from 'react';
-import ToolCard from './ToolCard'; // Make sure ToolCard.js is in the same folder as ToolSection.js
+import ToolCard from './ToolCard'; 
 import { FaSpa, FaSmile, FaHeartbeat, FaBell } from 'react-icons/fa';
-import './ToolSection.css'; // Assuming you already created this CSS file
+import './ToolSection.css';
 
-// Array of tools
 const tools = [
   {
     icon: <FaSpa />,
